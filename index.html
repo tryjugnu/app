@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugnu | Premium Social Platform</title>
+    <meta name="description" content="Jugnu is a premium platform designed for meaningful connections with a minimal and elegant interface.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Jugnu</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="btn-ghost" style="color: var(--text-main);">Home</a></li>
+                <!-- <li><a href="#features" class="btn-ghost" style="color: var(--text-main);">Features</a></li> -->
+                <li><a href="#" class="btn-premium" id="become-host-btn">Become a Host</a></li>
+            </ul>
+            <div class="nav-mobile-actions">
+                <a href="#" class="btn-premium btn-host-mobile" id="become-host-btn-mobile">Become a Host</a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+            <div class="hero-text animate-up">
+                <h1>Face-to-Face <br><span style="color: var(--primary-light)">Everywhere</span></h1>
+                <p>Experience ultra-high-definition video calls and crystal clear audio. Jugnu is where premium communication meets absolute privacy.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="#" class="btn-premium"><i class="fas fa-phone"></i> Get Started</a>
+                    <a href="#" class="btn-premium glass" style="background: transparent;">Our Technology</a>
+                </div>
+            </div>
+
+            <div class="hero-visual animate-up centered-hero">
+                <div class="carousel-parallax-wrapper">
+                    <div class="carousel-container" id="carousel">
+                        <div class="premium-card" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80')">
+                            <div class="card-content">
+                                <h3>Marcus, 28</h3>
+                                <p>Innovator & Creator</p>
+                            </div>
+                        </div>
+                        <div class="premium-card" style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80')">
+                            <div class="card-content">
+                                <h3>Sophie, 26</h3>
+                                <p>Digital Nomad</p>
+                            </div>
+                        </div>
+                        <div class="premium-card" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80')">
+                            <div class="card-content">
+                                <h3>Elena, 24</h3>
+                                <p>Visual Artist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-cta">
+                    <h2>Let's Talk</h2>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Experience Section 1 -->
+    <section class="experience-section">
+        <div class="container">
+            <div class="experience-grid">
+                <div class="experience-image reveal-left">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Collaboration">
+                </div>
+                <div class="experience-text reveal-right">
+                    <h2>Crystal Clear <span style="color: var(--primary)">Presence</span></h2>
+                    <p>Our proprietary low-latency engine ensures your video calls feel like being in the same room, even across oceans.</p>
+                    <a href="#" class="btn-premium glass" style="background: transparent;">Test Call</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="premium-divider"></div>
+
+    <!-- Scroll Experience Section 2 (Alternate) -->
+    <section class="experience-section alternate">
+        <div class="container">
+            <div class="experience-grid">
+                <div class="experience-image reveal-right">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80" alt="Premium Experience">
+                </div>
+                <div class="experience-text reveal-left">
+                    <h2>Encrypted <span style="color: var(--primary-light)">By Design</span></h2>
+                    <p>Your conversations are your own. Every call is protected by end-to-end encryption, ensuring total security and intimacy.</p>
+                    <a href="#" class="btn-premium">Join Securely</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Why Jugnu?</h2>
+                <p>Designed for the next generation of social interaction.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card reveal" style="transition-delay: 0.1s;">
+                    <i class="fas fa-signal feature-icon"></i>
+                    <h3>Zero Latency</h3>
+                    <p>Engineered for speed. Experience lag-free video communication that moves at the speed of thought.</p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay: 0.2s;">
+                    <i class="fas fa-microchip feature-icon"></i>
+                    <h3>HD 4K Video</h3>
+                    <p>Crystal clear 4K resolution ensures every detail and expression is captured in stunning clarity.</p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay: 0.3s;">
+                    <i class="fas fa-lock feature-icon"></i>
+                    <h3>E2E Encrypted</h3>
+                    <p>Top-tier security protocols. Your video and audio streams are fully encrypted from start to finish.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Become a Host Registration View -->
+    <div class="registration-view" id="registration-view">
+        <div class="close-registration" id="close-registration">&times;</div>
+        <div class="container">
+            <div class="registration-container">
+                <div class="registration-header">
+                    <h2>Become a Host</h2>
+                    <p>Join our premium network of communication experts.</p>
+                </div>
+                <form class="registration-form" id="registration-form">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required placeholder="+1 (555) 123-4567">
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" required>
+                            <option value="" disabled selected>Select your country</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="AU">Australia</option>
+                            <option value="DE">Germany</option>
+                            <option value="FR">France</option>
+                            <option value="IT">Italy</option>
+                            <option value="ES">Spain</option>
+                            <option value="NL">Netherlands</option>
+                            <option value="SE">Sweden</option>
+                            <option value="NO">Norway</option>
+                            <option value="DK">Denmark</option>
+                            <option value="FI">Finland</option>
+                            <option value="IE">Ireland</option>
+                            <option value="NZ">New Zealand</option>
+                            <option value="SG">Singapore</option>
+                            <option value="JP">Japan</option>
+                            <option value="KR">South Korea</option>
+                            <option value="IN">India</option>
+                            <option value="BR">Brazil</option>
+                            <option value="MX">Mexico</option>
+                            <option value="AR">Argentina</option>
+                            <option value="CL">Chile</option>
+                            <option value="ZA">South Africa</option>
+                            <option value="AE">United Arab Emirates</option>
+                            <option value="OTHER">Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-premium btn-form-submit">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="#" class="footer-logo logo">Jugnu</a>
+                    <p>The premium destination for deep connections and brilliant conversations. Join the glow.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#" id="home-link">Home</a></li>
+                        <li><a href="#" id="host-link-footer">Become a Host</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jugnu Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS for effects -->
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Carousel Logic - Bumble-style Stack
+        const carousel = document.getElementById('carousel');
+        let cards = Array.from(carousel.querySelectorAll('.premium-card'));
+        let isTransitioning = false;
+
+        function updateCarousel() {
+            cards.forEach((card, index) => {
+                card.className = 'premium-card'; // Reset classes
+                
+                if (index === 0) {
+                    card.classList.add('card-active');
+                } else if (index === 1) {
+                    card.classList.add('card-behind-1');
+                } else if (index === 2) {
+                    card.classList.add('card-behind-2');
+                } else {
+                    card.classList.add('card-entering');
+                }
+            });
+        }
+
+        function nextSlide() {
+            if (isTransitioning) return;
+            isTransitioning = true;
+
+            const topCard = cards[0];
+            topCard.classList.add('card-exit');
+
+            // Wait for swiping animation to complete
+            setTimeout(() => {
+                // Move the top card to the end of the array
+                const movedCard = cards.shift();
+                cards.push(movedCard);
+                
+                updateCarousel();
+                isTransitioning = false;
+            }, 800); // Matches CSS transition time
+        }
+
+        // Initialize
+        updateCarousel();
+
+        // Autoplay
+        setInterval(nextSlide, 4000);
+
+        // Optional: Manual swipe on click
+        carousel.addEventListener('click', nextSlide);
+
+        // Initial 3D Parallax on mouse move
+        const hero = document.querySelector('.hero');
+        hero.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth - 0.5) * 15;
+            const y = (e.clientY / window.innerHeight - 0.5) * 15;
+            const visual = document.querySelector('.carousel-parallax-wrapper');
+            if(visual) visual.style.transform = `rotateY(${x}deg) rotateX(${-y}deg)`;
+        });
+
+        // Scroll Reveal Intersection Observer
+        const revealOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, revealOptions);
+
+        document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // Become a Host Logic
+        const becomeHostBtn = document.getElementById('become-host-btn');
+        const becomeHostLinkFooter = document.getElementById('host-link-footer');
+        const registrationView = document.getElementById('registration-view');
+        const closeRegistration = document.getElementById('close-registration');
+        const registrationForm = document.getElementById('registration-form');
+
+        const openRegistration = (e) => {
+            if (e) e.preventDefault();
+            registrationView.style.display = 'block';
+            setTimeout(() => registrationView.classList.add('active'), 10);
+            document.body.classList.add('modal-open');
+            // Update URL hash
+            window.location.hash = 'host';
+        };
+
+        const hideRegistration = () => {
+            registrationView.classList.remove('active');
+            setTimeout(() => {
+                registrationView.style.display = 'none';
+                document.body.classList.remove('modal-open');
+            }, 500);
+            // Clear URL hash
+            history.replaceState(null, null, ' ');
+        };
+
+        // Handle hash changes (browser back/forward buttons and direct links)
+        window.addEventListener('hashchange', () => {
+            if (window.location.hash === '#host') {
+                registrationView.style.display = 'block';
+                setTimeout(() => registrationView.classList.add('active'), 10);
+                document.body.classList.add('modal-open');
+            } else {
+                if (registrationView.classList.contains('active')) {
+                    registrationView.classList.remove('active');
+                    setTimeout(() => {
+                        registrationView.style.display = 'none';
+                        document.body.classList.remove('modal-open');
+                    }, 500);
+                }
+            }
+        });
+
+        // Check URL hash on page load
+        if (window.location.hash === '#host') {
+            openRegistration();
+        }
+
+        becomeHostBtn.addEventListener('click', openRegistration);
+        becomeHostLinkFooter.addEventListener('click', openRegistration);
+        closeRegistration.addEventListener('click', hideRegistration);
+
+        // Mobile top-bar "Become a Host" button
+        const becomeHostBtnMobile = document.getElementById('become-host-btn-mobile');
+        if (becomeHostBtnMobile) becomeHostBtnMobile.addEventListener('click', openRegistration);
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+        });
+
+        // Close menu when clicking any link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Form Submission
+        registrationForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = {
+                fullName: document.getElementById('full-name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                country: document.getElementById('country').value,
+                submittedAt: new Date().toISOString()
+            };
+            
+            console.log('--- New Host Application Received ---');
+            console.log(formData);
+            console.log('--------------------------------------');
+            
+            alert('Application submitted! Check console for data.');
+            hideRegistration();
+            registrationForm.reset();
+        });
+    </script>
+</body>
+</html>
