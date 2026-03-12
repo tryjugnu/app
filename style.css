@@ -102,9 +102,9 @@ body::before {
 
 /* Container */
 .container {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 }
 
 /* Navbar */
@@ -723,6 +723,7 @@ footer {
     gap: 0.75rem;
     min-width: 300px;
     justify-content: center;
+    pointer-events: none;
 }
 
 .toast.show {
