@@ -9,6 +9,36 @@
         content="Jugnu is a premium platform designed for meaningful connections with a minimal and elegant interface.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18011629744"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-18011629744');
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1608251203724137');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1608251203724137&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -17,12 +47,13 @@
         <div class="container nav-content">
             <a href="#" class="logo">Jugnu</a>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#home" class="btn-ghost" style="color: var(--text-main);">Home</a></li>
-                <!-- <li><a href="#features" class="btn-ghost" style="color: var(--text-main);">Features</a></li> -->
-                <li><a href="#" class="btn-premium" id="become-host-btn">Become a Host</a></li>
+                <li><a href="#" class="btn-premium" id="become-host-btn">Become a Listener</a></li>
             </ul>
             <div class="nav-mobile-actions">
-                <a href="#" class="btn-premium btn-host-mobile" id="become-host-btn-mobile">Become a Host</a>
+                <a href="https://m.me/61585203309089" class="btn-premium btn-host-mobile" target="_blank" class="btn-premium">
+                    <i class="fab fa-facebook-messenger"></i> Talk Now
+                </a>
+                <a href="#" class="btn-premium btn-host-mobile" id="become-host-btn-mobile">Become a Listener</a>
                 <div class="hamburger" id="hamburger">
                     <span></span>
                     <span></span>
@@ -37,14 +68,24 @@
         <div class="container">
             <div class="hero-grid">
                 <div class="hero-text animate-up">
-                    <!-- <h1>You are not <br><span style="color: var(--primary-light)">Alone</span></h1> -->
-                    <h1>Never Feel Alone <br><span style="color: var(--primary-light)">Make Friends</span></h1>
+                    <div class="hero-title">
+                        <h1 class="title-text active">Never Feel Alone <br><span
+                                style="color: var(--primary-light)">Make Friends</span></h1>
+                        <h1 class="title-text">जब मन भारी हो, <br><span style="color: var(--primary-light)">बस कॉल
+                                कीजिए</span></h1>
+                    </div>
                     <p>No Scams. No Fake Profiles<br>
                         Your identity stays private. We actively monitor the platform to maintain a trustworthy and
                         respectful environment. </p>
-                    <div style="display: flex; gap: 1rem;">
-                        <a href="#" class="btn-premium"><i class="fas fa-phone"></i> &nbsp; &nbsp;Talk Now</a>
+                    <div style="display: flex; gap: 1rem; align-items: center;">
                         <!-- <a href="#" class="btn-premium glass" style="background: transparent;">Our Technology</a> -->
+                        <a href="https://m.me/61585203309089" target="_blank" class="btn-premium">
+                            <i class="fab fa-facebook-messenger"></i> Talk Now
+                        </a>
+
+                        <span style="font-weight: 600; color: var(--primary-light);">
+                            And Get Free Coins
+                        </span>
                     </div>
                 </div>
 
@@ -53,7 +94,7 @@
                         <div class="carousel-container" id="carousel">
                             <div class="premium-card"
                                 style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80')">
-                            <!-- <div class="premium-card"
+                                <!-- <div class="premium-card"
                                 style="background-image: url('./marcus.avif')"> -->
                                 <div class="card-content">
                                     <h3>Marcus, 28</h3>
@@ -62,7 +103,7 @@
                             </div>
                             <div class="premium-card"
                                 style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80')">
-                            <!-- <div class="premium-card"
+                                <!-- <div class="premium-card"
                                 style="background-image: url('./sophie.avif')"> -->
                                 <div class="card-content">
                                     <h3>Sophie, 26</h3>
@@ -87,39 +128,31 @@
         </div>
     </section>
 
-    <!-- Scroll Experience Section 1 -->
-    <section class="experience-section">
+    <!-- Features Section -->
+    <section class="features" id="features">
         <div class="container">
-            <div class="experience-grid">
-                <div class="experience-image reveal-left">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
-                        alt="Collaboration">
-                </div>
-                <div class="experience-text reveal-right">
-                    <h2>Crystal Clear <span style="color: var(--primary)">Presence</span></h2>
-                    <p>Our proprietary low-latency engine ensures your video calls feel like being in the same room,
-                        even across oceans.</p>
-                    <a href="#" class="btn-premium glass" style="background: transparent;">Test Call</a>
-                </div>
+            <div class="section-title reveal">
+                <h2>Why Jugnu?</h2>
+                <p>Designed for the next generation of social interaction.</p>
             </div>
-        </div>
-    </section>
-
-    <div class="premium-divider"></div>
-
-    <!-- Scroll Experience Section 2 (Alternate) -->
-    <section class="experience-section alternate">
-        <div class="container">
-            <div class="experience-grid">
-                <div class="experience-image reveal-right">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80"
-                        alt="Premium Experience">
+            <div class="feature-grid">
+                <div class="feature-card reveal" style="transition-delay: 0.1s;">
+                    <i class="fas fa-heart-broken feature-icon"></i>
+                    <h3>Loneliness</h3>
+                    <p>Connect with someone who truly understands. Share your feelings in a safe, judgment-free space.
+                    </p>
                 </div>
-                <div class="experience-text reveal-left">
-                    <h2>Encrypted <span style="color: var(--primary-light)">By Design</span></h2>
-                    <p>Your conversations are your own. Every call is protected by end-to-end encryption, ensuring total
-                        security and intimacy.</p>
-                    <a href="#" class="btn-premium">Join Securely</a>
+                <div class="feature-card reveal" style="transition-delay: 0.2s;">
+                    <i class="fas fa-heart-crack feature-icon"></i>
+                    <h3>Break Up</h3>
+                    <p>Healing starts with being heard. Talk through your emotions with empathetic listeners who care.
+                    </p>
+                </div>
+                <div class="feature-card reveal" style="transition-delay: 0.3s;">
+                    <i class="fas fa-briefcase feature-icon"></i>
+                    <h3>Career Stress</h3>
+                    <p>Navigate work challenges with clarity. Get support and perspective from experienced
+                        professionals.</p>
                 </div>
             </div>
         </div>
@@ -136,29 +169,70 @@
                 <div class="feature-card reveal" style="transition-delay: 0.1s;">
                     <i class="fas fa-heart-broken feature-icon"></i>
                     <h3>Loneliness</h3>
-                    <p>Connect with someone who truly understands. Share your feelings in a safe, judgment-free space.</p>
+                    <p>Connect with someone who truly understands. Share your feelings in a safe, judgment-free space.
+                    </p>
                 </div>
                 <div class="feature-card reveal" style="transition-delay: 0.2s;">
                     <i class="fas fa-heart-crack feature-icon"></i>
                     <h3>Break Up</h3>
-                    <p>Healing starts with being heard. Talk through your emotions with empathetic listeners who care.</p>
+                    <p>Healing starts with being heard. Talk through your emotions with empathetic listeners who care.
+                    </p>
                 </div>
                 <div class="feature-card reveal" style="transition-delay: 0.3s;">
                     <i class="fas fa-briefcase feature-icon"></i>
                     <h3>Career Stress</h3>
-                    <p>Navigate work challenges with clarity. Get support and perspective from experienced professionals.</p>
+                    <p>Navigate work challenges with clarity. Get support and perspective from experienced
+                        professionals.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Become a Host Registration View -->
+    <!-- Scroll Experience Section 1 -->
+    <section class="experience-section">
+        <div class="container">
+            <div class="experience-grid">
+                <div class="experience-image reveal-left">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                        alt="Collaboration">
+                </div>
+                <div class="experience-text reveal-right">
+                    <h2>No Fake <span style="color: var(--primary)">Profiles</span></h2>
+                    <p>Experience high-quality voice calls that make every word count. Connect with verified listeners
+                        who genuinely care about what you have to say.</p>
+                    <a href="#" class="btn-premium glass" style="background: transparent;">Start Talking</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="premium-divider"></div>
+
+    <!-- Scroll Experience Section 2 (Alternate) -->
+    <section class="experience-section alternate">
+        <div class="container">
+            <div class="experience-grid">
+                <div class="experience-image reveal-right">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80"
+                        alt="Premium Experience">
+                </div>
+                <div class="experience-text reveal-left">
+                    <h2>Safe & <span style="color: var(--primary-light)">Anonymous</span></h2>
+                    <p>Your privacy is our priority. Talk freely without revealing your identity. All conversations are
+                        confidential and protected, creating a judgment-free space for authentic connections.</p>
+                    <a href="#" class="btn-premium">Talk Anonymously</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Become a Listener Registration View -->
     <div class="registration-view" id="registration-view">
         <div class="close-registration" id="close-registration">&times;</div>
         <div class="container">
             <div class="registration-container">
                 <div class="registration-header">
-                    <h2>Become a Host</h2>
+                    <h2>Become a Listener</h2>
                     <p>Join our premium network of communication experts.</p>
                 </div>
                 <form class="registration-form" id="registration-form">
@@ -239,7 +313,7 @@
                     <!-- <h4>Platform</h4> -->
                     <ul>
                         <!-- <li><a href="#" id="home-link">Home</a></li> -->
-                        <!-- <li><a href="#" id="host-link-footer">Become a Host</a></li> -->
+                        <!-- <li><a href="#" id="host-link-footer">Become a Listener</a></li> -->
                         <!-- <li><a href="#">Privacy Policy</a></li> -->
                     </ul>
                 </div>
@@ -247,8 +321,9 @@
                     <h4>Connect</h4>
                     <ul>
                         <!-- <li><a href="#">Twitter</a></li> -->
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=61585203309089"
+                                target="_blank">Facebook</a></li>
+                        <!-- <li><a href="#">Contact Us</a></li> -->
                     </ul>
                 </div>
             </div>
@@ -345,7 +420,7 @@
             revealObserver.observe(el);
         });
 
-        // Become a Host Logic
+        // Become a Listener Logic
         const becomeHostBtn = document.getElementById('become-host-btn');
         const becomeHostLinkFooter = document.getElementById('host-link-footer');
         const registrationView = document.getElementById('registration-view');
@@ -397,7 +472,7 @@
         //becomeHostLinkFooter.addEventListener('click', openRegistration);
         closeRegistration.addEventListener('click', hideRegistration);
 
-        // Mobile top-bar "Become a Host" button
+        // Mobile top-bar "Become a Listener" button
         const becomeHostBtnMobile = document.getElementById('become-host-btn-mobile');
         if (becomeHostBtnMobile) becomeHostBtnMobile.addEventListener('click', openRegistration);
 
