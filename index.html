@@ -2,14 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jugnu</title>
-    <meta name="description"
-        content="Jugnu is a premium platform designed for meaningful connections with a minimal and elegant interface.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18011629744"></script>
     <script>
@@ -18,7 +10,16 @@
         gtag('js', new Date());
 
         gtag('config', 'AW-18011629744');
+        gtag('config', 'GT-NMCRVJ9J');
     </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugnu</title>
+    <meta name="description"
+        content="Jugnu is a premium platform designed for meaningful connections with a minimal and elegant interface.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Meta Pixel Code -->
     <script>
@@ -158,35 +159,7 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="container">
-            <div class="section-title reveal">
-                <h2>Why Jugnu?</h2>
-                <p>Designed for the next generation of social interaction.</p>
-            </div>
-            <div class="feature-grid">
-                <div class="feature-card reveal" style="transition-delay: 0.1s;">
-                    <i class="fas fa-heart-broken feature-icon"></i>
-                    <h3>Loneliness</h3>
-                    <p>Connect with someone who truly understands. Share your feelings in a safe, judgment-free space.
-                    </p>
-                </div>
-                <div class="feature-card reveal" style="transition-delay: 0.2s;">
-                    <i class="fas fa-heart-crack feature-icon"></i>
-                    <h3>Break Up</h3>
-                    <p>Healing starts with being heard. Talk through your emotions with empathetic listeners who care.
-                    </p>
-                </div>
-                <div class="feature-card reveal" style="transition-delay: 0.3s;">
-                    <i class="fas fa-briefcase feature-icon"></i>
-                    <h3>Career Stress</h3>
-                    <p>Navigate work challenges with clarity. Get support and perspective from experienced
-                        professionals.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Scroll Experience Section 1 -->
     <section class="experience-section">
@@ -495,6 +468,24 @@
             });
         });
 
+        // Track "Talk Now" clicks
+        document.querySelectorAll('a[href*="m.me"]').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (typeof gtag === 'function') {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-18011629744',
+                        'event_callback': function() {
+                            console.log('Talk Now click tracked');
+                        }
+                    });
+                    // Also track as a generic lead event
+                    gtag('event', 'generate_lead', {
+                        'method': 'Messenger'
+                    });
+                }
+            });
+        });
+
         // Form Submission with Toast Notification
         registrationForm.addEventListener('submit', function (e) {
             e.preventDefault();
@@ -507,6 +498,16 @@
                 body: formData,
                 mode: "no-cors"
             });
+
+            // Google Ads Conversion tracking
+            if (typeof gtag === 'function') {
+                gtag('event', 'conversion', {
+                    'send_to': 'AW-18011629744',
+                    'event_callback': function() {
+                        console.log('Conversion tracked');
+                    }
+                });
+            }
 
             // Reset form
             registrationForm.reset();
